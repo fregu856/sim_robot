@@ -37,3 +37,12 @@ $ roslaunch asl_turtlebot turtlebot_sim.launch
 If this doesn't work, open another terminal and do this FIRST:  
 $ rosrun gazebo_ros gzclient  
 
+Run a test controller to check that everything is working:  
+Place "test_controller.py" in sim_robot/catkin_ws/src/turtlebot_control/scripts, make it executable and build the package.  
+$ roslaunch asl_turtlebot turtlebot_sim.launch  
+$ rosrun turtlebot_control test_controller.py (in another terminal)  
+The robot should now move to the coordinate (1, 1).    
+
+
+
+
