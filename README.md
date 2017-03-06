@@ -12,7 +12,8 @@ catkin
 
 Catkin:  
 Create a workspace:  
-http://wiki.ros.org/catkin/Tutorials/create_a_workspace  
+http://wiki.ros.org/catkin/Tutorials/create_a_workspace 
+Add "source ~/sim_robot/catkin_ws/devel/setup.bash" to the bottom of ~/.bashrc ($ sudo nano ~/bashrc) for this line to be run everytime you open the terminal (otherwise you have to do it manually).  
 
 Create a package in the workspace:  
 $ cd sim_robot/catkin_ws/src
@@ -25,4 +26,9 @@ $ chmod a+x script.py
 You should also build the package:  
 $ cd sim_robot/catkin_ws  
 $ catkin_make
+
+Simulation in Gazebo:  
+$ cd sim_robot/catkin_ws/src  
+$ git clone https://github.com/StanfordASL/asl_turtlebot.git  
+Add "export GAZEBO_MODEL_PATH=~/sim_robot/catkin_ws/src/asl_turtlebot/models" to the bottom of ~/.bashrc ($ sudo nano ~/bashrc) for this line to be run everytime you open the terminal (otherwise you have to do it manually).  
 
